@@ -395,5 +395,25 @@ public class DudaDanielTask3 {
         Rate rate = new Rate(CarParkKind.STUDENT, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
         assertEquals(rate.calculate(testPeriod), new BigDecimal("12.00"));
     }
+	
+	@org.junit.Test
+    public void calculateManagementReduce() throws Exception {
+			
+		BigDecimal hourlyNormalRate = new BigDecimal("4");
+		BigDecimal hourlyReducedRate = new BigDecimal("2");;
+		
+		Period testPeriod = new Period(21, 22);
+		
+		Period reducedPeriod = new Period(18, 23);
+		ArrayList<Period> reducedPeriods = new ArrayList();
+		reducedPeriods.add(reducedPeriod);
+		
+		ArrayList<Period> normalPeriods = new ArrayList<Period>();
+		Period normalPeriod = new Period(7, 17);
+		normalPeriods.add(normalPeriod);
+		
+        Rate rate = new Rate(CarParkKind.MANAGEMENT, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
+        assertEquals(rate.calculate(testPeriod), new BigDecimal("3"));
+    }
 }
 

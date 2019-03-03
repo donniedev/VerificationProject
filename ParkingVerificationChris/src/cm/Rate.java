@@ -115,6 +115,17 @@ public class Rate {
         		returnValue = BigDecimal.valueOf(3);
         		}
         	}
+        if(this.kind.equals(CarParkKind.VISITOR)){
+        	if (returnValue.compareTo(BigDecimal.valueOf(8)) >= 0) {
+        		
+        		tempValue =  returnValue.subtract(BigDecimal.valueOf(8));
+        		returnValue = tempValue.multiply(BigDecimal.valueOf(0.50));
+        		}
+        	else if (returnValue.compareTo(BigDecimal.valueOf(8)) < 0) {
+        		
+        		returnValue = BigDecimal.valueOf(0);
+        		}
+        	}
         
         return returnValue;
     }

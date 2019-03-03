@@ -433,7 +433,7 @@ public class DudaDanielTask3 {
 		normalPeriods.add(normalPeriod);
 		
         Rate rate = new Rate(CarParkKind.VISITOR, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
-        assertEquals(rate.calculate(testPeriod), new BigDecimal("2"));
+        assertEquals(rate.calculate(testPeriod), new BigDecimal("2.0"));
     }
 	
 	@org.junit.Test

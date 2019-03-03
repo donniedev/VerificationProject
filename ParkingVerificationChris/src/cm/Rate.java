@@ -4,9 +4,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by CM on 01/02/2018.
- */
 public class Rate {
     private CarParkKind kind;
     private BigDecimal hourlyNormalRate;

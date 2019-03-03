@@ -2,9 +2,6 @@ package cm;
 
 import java.util.List;
 
-/**
- * Created by CM on 01/02/2018.
- */
 public class Period {
     private int startHour;
     private int endHour;

@@ -70,7 +70,7 @@ public class DudaDanielTask3 {
     public void normalPeriodsNull() throws Exception {
 					
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = null;
@@ -86,7 +86,7 @@ public class DudaDanielTask3 {
     public void normalRateNull() throws Exception {
 				
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -104,7 +104,7 @@ public class DudaDanielTask3 {
     public void reducedRateNull() throws Exception {
 						
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -122,7 +122,7 @@ public class DudaDanielTask3 {
     public void normalRateLowerThan0() throws Exception {
 				
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -140,7 +140,7 @@ public class DudaDanielTask3 {
     public void reducedRateLowerThan0() throws Exception {
 				
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -158,7 +158,7 @@ public class DudaDanielTask3 {
     public void normalRateLowerThanReducedRate() throws Exception {
 				
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -176,7 +176,7 @@ public class DudaDanielTask3 {
     public void normalRateEqualToReducedRate() throws Exception {
 				
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 			
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -195,7 +195,7 @@ public class DudaDanielTask3 {
 					
 		Period reducedPeriod = new Period(18, 21);
 		Period reducedPeriod2 = new Period(19, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		reducedPeriods.add(reducedPeriod2);
 		
@@ -216,7 +216,7 @@ public class DudaDanielTask3 {
 					
 		Period reducedPeriod = new Period(18, 21);
 		//Period reducedPeriod2 = new Period(19, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		//reducedPeriods.add(reducedPeriod2);
 		
@@ -238,7 +238,7 @@ public class DudaDanielTask3 {
     public void periodOverlaps() throws Exception {
 					
 		Period reducedPeriod = new Period(16, 21);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -261,7 +261,7 @@ public class DudaDanielTask3 {
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
 				
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -283,7 +283,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(2, 5);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -305,7 +305,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(8, 12);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -325,7 +325,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(18, 20);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -345,7 +345,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(15, 20);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -357,7 +357,7 @@ public class DudaDanielTask3 {
     }
 	
 	@org.junit.Test
-    public void calculateStaffReduce() throws Exception {
+    public void calculateStaffKindReduce() throws Exception {
 			
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
@@ -365,7 +365,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(8, 20);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -377,7 +377,7 @@ public class DudaDanielTask3 {
     }
 	
 	@org.junit.Test
-    public void calculateStudentReduce() throws Exception {
+    public void calculateStudentKindReduce() throws Exception {
 			
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
@@ -385,7 +385,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(8, 12);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -397,7 +397,7 @@ public class DudaDanielTask3 {
     }
 	
 	@org.junit.Test
-    public void calculateStudentReduceValidValues() throws Exception {
+    public void calculateStudentKind() throws Exception {
 			
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
@@ -405,7 +405,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(8, 9);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -425,7 +425,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(21, 22);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -442,10 +442,10 @@ public class DudaDanielTask3 {
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
 		
-		Period testPeriod = new Period(20, 22);
+		Period testPeriod = new Period(20, 22); 
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -458,7 +458,7 @@ public class DudaDanielTask3 {
 	
 	
 	@org.junit.Test
-    public void calculateVisitorReduce() throws Exception {
+    public void calculateVisitorKindReduce() throws Exception {
 			
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
@@ -466,7 +466,7 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(8, 11);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -478,7 +478,7 @@ public class DudaDanielTask3 {
     }
 	
 	@org.junit.Test
-    public void calculateVisitorReduceLowerThan8() throws Exception {
+    public void calculateVisitorKindReduceLowerThan8() throws Exception {
 			
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
@@ -486,7 +486,27 @@ public class DudaDanielTask3 {
 		Period testPeriod = new Period(8, 9);
 		
 		Period reducedPeriod = new Period(18, 23);
-		ArrayList<Period> reducedPeriods = new ArrayList();
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
+		reducedPeriods.add(reducedPeriod);
+		
+		ArrayList<Period> normalPeriods = new ArrayList<Period>();
+		Period normalPeriod = new Period(7, 17);
+		normalPeriods.add(normalPeriod);
+		 
+        Rate rate = new Rate(CarParkKind.VISITOR, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
+        assertEquals(rate.calculate(testPeriod), new BigDecimal("0"));
+    } 
+	
+	@org.junit.Test
+    public void calculateVisitorKindEquals8() throws Exception {
+			
+		BigDecimal hourlyNormalRate = new BigDecimal("4");
+		BigDecimal hourlyReducedRate = new BigDecimal("2");;
+		
+		Period testPeriod = new Period(8, 10);
+		
+		Period reducedPeriod = new Period(18, 23);
+		ArrayList<Period> reducedPeriods = new ArrayList<Period>();
 		reducedPeriods.add(reducedPeriod);
 		
 		ArrayList<Period> normalPeriods = new ArrayList<Period>();
@@ -496,5 +516,6 @@ public class DudaDanielTask3 {
         Rate rate = new Rate(CarParkKind.VISITOR, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
         assertEquals(rate.calculate(testPeriod), new BigDecimal("0"));
     }
+	 
 }
 

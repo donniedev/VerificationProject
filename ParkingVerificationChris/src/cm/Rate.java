@@ -93,7 +93,7 @@ public class Rate {
         int normalRateHours = periodStay.occurences(normal);
         int reducedRateHours = periodStay.occurences(reduced);
         BigDecimal returnValue;
-       // BigDecimal tempValue;
+        //BigDecimal tempValue;
         returnValue = (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add(
                 this.hourlyReducedRate.multiply(BigDecimal.valueOf(reducedRateHours)));
         
@@ -116,14 +116,15 @@ public class Rate {
         		}
         	}
         else if(this.kind.equals(CarParkKind.VISITOR)){
-        	if (returnValue.compareTo(BigDecimal.valueOf(8)) >= 0) {
+        	if (returnValue.compareTo(BigDecimal.valueOf(8)) > 0) {
         		
         		//tempValue =  returnValue.subtract(BigDecimal.valueOf(8));
+        		//returnValue = tempValue.multiply(BigDecimal.valueOf(0.50));
         		returnValue = returnValue.subtract(BigDecimal.valueOf(8)).multiply(BigDecimal.valueOf(0.50));
         		}
-        	else if (returnValue.compareTo(BigDecimal.valueOf(8)) < 0) {
-        		
-        		returnValue = BigDecimal.valueOf(0);
+        	else if (returnValue.compareTo(BigDecimal.valueOf(8)) <= 0) {   
+        		System.out.println(" yes 2");
+        		returnValue = BigDecimal.valueOf(0); 
         		}
         	}
         

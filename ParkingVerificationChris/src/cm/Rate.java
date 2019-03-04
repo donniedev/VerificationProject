@@ -93,7 +93,7 @@ public class Rate {
         int normalRateHours = periodStay.occurences(normal);
         int reducedRateHours = periodStay.occurences(reduced);
         BigDecimal returnValue;
-        BigDecimal tempValue;
+       // BigDecimal tempValue;
         returnValue = (this.hourlyNormalRate.multiply(BigDecimal.valueOf(normalRateHours))).add(
                 this.hourlyReducedRate.multiply(BigDecimal.valueOf(reducedRateHours)));
         
@@ -102,24 +102,24 @@ public class Rate {
         		returnValue = BigDecimal.valueOf(16);
         		}
         	}
-        if(this.kind.equals(CarParkKind.STUDENT)){
+        else if(this.kind.equals(CarParkKind.STUDENT)){
         	if (returnValue.compareTo(BigDecimal.valueOf(5.50)) >= 0) {
         		
-        		tempValue =  returnValue.multiply(BigDecimal.valueOf(0.25));
-        		returnValue = returnValue.subtract(tempValue);
+        		//tempValue =  returnValue.multiply(BigDecimal.valueOf(0.25));
+        		returnValue = returnValue.subtract(returnValue.multiply(BigDecimal.valueOf(0.25)));
         		}
         	}
-        if(this.kind.equals(CarParkKind.MANAGEMENT)){
+        else if(this.kind.equals(CarParkKind.MANAGEMENT)){
         	if (returnValue.compareTo(BigDecimal.valueOf(5.50)) < 3) {
         		
         		returnValue = BigDecimal.valueOf(3);
         		}
         	}
-        if(this.kind.equals(CarParkKind.VISITOR)){
+        else if(this.kind.equals(CarParkKind.VISITOR)){
         	if (returnValue.compareTo(BigDecimal.valueOf(8)) >= 0) {
         		
-        		tempValue =  returnValue.subtract(BigDecimal.valueOf(8));
-        		returnValue = tempValue.multiply(BigDecimal.valueOf(0.50));
+        		//tempValue =  returnValue.subtract(BigDecimal.valueOf(8));
+        		returnValue = returnValue.subtract(BigDecimal.valueOf(8)).multiply(BigDecimal.valueOf(0.50));
         		}
         	else if (returnValue.compareTo(BigDecimal.valueOf(8)) < 0) {
         		

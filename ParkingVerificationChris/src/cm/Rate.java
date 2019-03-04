@@ -110,7 +110,7 @@ public class Rate {
         		}
         	}
         else if(this.kind.equals(CarParkKind.MANAGEMENT)){
-        	if (returnValue.compareTo(BigDecimal.valueOf(5.50)) < 3) {
+        	if (returnValue.compareTo(BigDecimal.valueOf(3)) < 0) {
         		
         		returnValue = BigDecimal.valueOf(3);
         		}

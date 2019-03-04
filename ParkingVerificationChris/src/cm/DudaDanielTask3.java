@@ -397,7 +397,27 @@ public class DudaDanielTask3 {
     }
 	
 	@org.junit.Test
-    public void calculateManagementReduce() throws Exception {
+    public void calculateStudentReduceValidValues() throws Exception {
+			
+		BigDecimal hourlyNormalRate = new BigDecimal("4");
+		BigDecimal hourlyReducedRate = new BigDecimal("2");;
+		
+		Period testPeriod = new Period(8, 9);
+		
+		Period reducedPeriod = new Period(18, 23);
+		ArrayList<Period> reducedPeriods = new ArrayList();
+		reducedPeriods.add(reducedPeriod);
+		
+		ArrayList<Period> normalPeriods = new ArrayList<Period>();
+		Period normalPeriod = new Period(7, 17);
+		normalPeriods.add(normalPeriod);
+		
+        Rate rate = new Rate(CarParkKind.STUDENT, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
+        assertEquals(rate.calculate(testPeriod), new BigDecimal("4"));
+    }
+	
+	@org.junit.Test
+    public void calculateManagementKindReduce() throws Exception {
 			
 		BigDecimal hourlyNormalRate = new BigDecimal("4");
 		BigDecimal hourlyReducedRate = new BigDecimal("2");;
@@ -415,6 +435,27 @@ public class DudaDanielTask3 {
         Rate rate = new Rate(CarParkKind.MANAGEMENT, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
         assertEquals(rate.calculate(testPeriod), new BigDecimal("3"));
     }
+	
+	@org.junit.Test
+    public void calculateManagementKind() throws Exception {
+			
+		BigDecimal hourlyNormalRate = new BigDecimal("4");
+		BigDecimal hourlyReducedRate = new BigDecimal("2");;
+		
+		Period testPeriod = new Period(20, 22);
+		
+		Period reducedPeriod = new Period(18, 23);
+		ArrayList<Period> reducedPeriods = new ArrayList();
+		reducedPeriods.add(reducedPeriod);
+		
+		ArrayList<Period> normalPeriods = new ArrayList<Period>();
+		Period normalPeriod = new Period(7, 17);
+		normalPeriods.add(normalPeriod);
+		
+        Rate rate = new Rate(CarParkKind.MANAGEMENT, hourlyNormalRate, hourlyReducedRate, reducedPeriods, normalPeriods);
+        assertEquals(rate.calculate(testPeriod), new BigDecimal("4"));
+    }
+	
 	
 	@org.junit.Test
     public void calculateVisitorReduce() throws Exception {
